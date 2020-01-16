@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import api from '../../services/api';
+import { Link } from 'react-router-dom';
 import './styles.css';
-import {Link } from 'react-router-dom';
 
 export default class Main extends Component {
 
@@ -24,7 +24,7 @@ export default class Main extends Component {
     };
 
     prevPage = () =>{
-        const { page, employeeInfo } =  this.state;
+        const { page } =  this.state;
 
         if(page === 1) return;
 

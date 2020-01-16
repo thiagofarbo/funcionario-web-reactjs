@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import api from '../../services/api';
+import './styles.css'
 
 export default class Employee extends Component{
 
@@ -21,7 +22,7 @@ async componentDidMount(){
 
         return (
             <div className="employee-info">
-                <h1>key={employee._id}</h1>
+                <h1>{employee._id}</h1>
                 <p>{employee.name}</p>
                 <p>{employee.address}</p>
                 <p>{employee.phone}</p>

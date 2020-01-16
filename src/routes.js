@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Main from './pages/main';
-import Employee from './pages/employee/index';
+import Employee from './pages/employee';
 
 const Routes = () => (
     <BrowserRouter>
@@ -11,6 +11,6 @@ const Routes = () => (
             <Route path='/employees/:id' component={Employee}/>
         </Switch>
     </BrowserRouter>
-)
+);
 
 export default Routes;
